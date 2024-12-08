@@ -1,48 +1,4 @@
-// const express = require('express')
-// let routes = express.Router()
 
-// // let Company = require('./modules/customer')
-// let Todo = require('../modules/todo')
-// routes.post('/',async(req,res) =>{
-//     try{
-//       let data=req.body
-//       let newTodo=new Todo(data)
-  
-//       let response = await newTodo.save()
-//       console.log('Task added successfully !!')
-//       res.status(200).send(response)
-//     }catch(err){
-//         console.log(err);
-//         res.status(500).send(err)  
-//     }
-//   })
-//   routes.get('/', async (req, res) => {
-//     try{
-//       let response = await Todo.find()
-//       console.log('saved');
-//       res.status(200).send(response)
-//     }catch(err){
-//       console.log(err);
-//       res.status(500).send(err)
-//     }
-//   })
-//   routes.get('/:task', async (req, res) => {
-//     let todo= req.params.todo; 
-//     try {
-//       let response = await TransformStreamDefaultController.find({ todo: todo });
-//       if (response === 0) {
-//         return res.status(404).send("No companies found with work");
-//       }
-//       console.log(`data fetched`);
-//       res.status(200).send(response);
-//     } catch (err) {
-//       console.log(err);
-//       res.status(500).send(err);
-//     }
-//   });
-  
-// module.exports = routes
-//===========================================================================================================================
 const express = require('express')
 let routes = express.Router()
 
